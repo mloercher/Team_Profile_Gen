@@ -267,7 +267,9 @@ function HTMLtemplate() {
 </head>
 <body>
 <header><h1>My Team</h1></header>
+<div class="row row-cols-1 row-cols-md-3 g-4">
 ${teamMembers.join('')}
+</div>
 </body>
 </html>
     `

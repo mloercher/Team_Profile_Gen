@@ -17,7 +17,7 @@ function renderManager(manager) {
 function renderIntern(intern) {
   return `<div class="card" style="width: 18rem;">
   <div class="card-body">
-    <h5 class="card-title">Intern</h5>
+    <h5 class="card-title">INTERN</h5>
     <ul class="list-group">
       <li class="list-group-item">Name: ${intern.name} </l1>
       <li class="list-group-item">ID: ${intern.id}</l1>
@@ -32,7 +32,7 @@ function renderIntern(intern) {
 function renderEngineer(engineer) {
   return `<div class="card" style="width: 18rem;">
   <div class="card-body">
-    <h5 class="card-title">Engineer</h5>
+    <h5 class="card-title">ENGINEER</h5>
     <ul class="list-group">
       <li class="list-group-item">Name: ${engineer.name} </l1>
       <li class="list-group-item">ID: ${engineer.id}</l1>
