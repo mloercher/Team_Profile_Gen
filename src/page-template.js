@@ -6,8 +6,8 @@ function renderManager(manager) {
     <ul class="list-group">
       <li class="list-group-item">Name: ${manager.name} </l1>
       <li class="list-group-item">ID: ${manager.id}</l1>
-      <li class="list-group-item">E:<a href="mailto: ${manager.email}">${manager.email}</a></l1>
-      <li class="list-group-item">P:${manager.officeNumber}</l1>
+      <li class="list-group-item">E: <a href="mailto: ${manager.email}">${manager.email}</a></l1>
+      <li class="list-group-item">P: ${manager.officeNumber}</l1>
    </ul>
   </div>
 </div>`;
@@ -21,8 +21,8 @@ function renderIntern(intern) {
     <ul class="list-group">
       <li class="list-group-item">Name: ${intern.name} </l1>
       <li class="list-group-item">ID: ${intern.id}</l1>
-      <li class="list-group-item">E:<a href="mailto: ${intern.email}">${intern.email}</a></l1>
-      <li class="list-group-item">School:${intern.school}</l1>
+      <li class="list-group-item">E: <a href="mailto: ${intern.email}">${intern.email}</a></l1>
+      <li class="list-group-item">School: ${intern.school}</l1>
    </ul>
   </div>
 </div>`;
@@ -36,8 +36,8 @@ function renderEngineer(engineer) {
     <ul class="list-group">
       <li class="list-group-item">Name: ${engineer.name} </l1>
       <li class="list-group-item">ID: ${engineer.id}</l1>
-      <li class="list-group-item">E:<a href="mailto: ${engineer.email}">${engineer.email}</a></l1>
-      <li class="list-group-item">GitHub:<a href="https://www.github.com/${engineer.github}" target="_blank">${engineer.github}</l1></a>
+      <li class="list-group-item">E: <a href="mailto: ${engineer.email}">${engineer.email}</a></l1>
+      <li class="list-group-item">GitHub: <a href="https://www.github.com/${engineer.github}" target="_blank">${engineer.github}</l1></a>
    </ul>
   </div>
 </div>`;
