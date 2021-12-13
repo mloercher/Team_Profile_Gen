@@ -1,6 +1,6 @@
 # Team_Profile_Gen
 
-###Demo Video: https://share.vidyard.com/watch/Uw1tRy4R4Zb4bYRW19gjRB?
+## Demo Video: https://share.vidyard.com/watch/Uw1tRy4R4Zb4bYRW19gjRB?
 
 # Description:
 User invokes the generator by entering "node index" in the command line. Allows user to build a team profile consisting of cards containing employee-specific information. A list of prompts collects employee info including: name, ID, email address, phone number, school, and github profile. 
