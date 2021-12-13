@@ -1,92 +1,46 @@
 //Render Manager_________________________________________________
 function renderManager(manager) {
-    return `<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <h1>
-                My manager
-            </h1>
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="card-header">
-           ${manager.name} 
-        </div>
-        <div class="card-title">
-           ${manager.getRole()} 
-        </div>
-    </div>
-    <div class="card-body">
-        <ul class="list-group">
-           <li class="list-group-item">${manager.id}</l1>
-           <li class="list-group-item">${manager.email}</l1>
-           <li class="list-group-item">${manager.officeNumber}</l1>
-        </ul>
-        </div>
-</div>`
-};
+  return `<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">MANAGER</h5>
+    <ul class="list-group">
+      <li class="list-group-item">Name: ${manager.name} </l1>
+      <li class="list-group-item">ID: ${manager.id}</l1>
+      <li class="list-group-item">E:<a href="mailto: ${manager.email}">${manager.email}</a></l1>
+      <li class="list-group-item">P:${manager.officeNumber}</l1>
+   </ul>
+  </div>
+</div>`;
+}
 
 //Render Intern_________________________________________________
 function renderIntern(intern) {
-    return `<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <h1>
-                Intern
-            </h1>
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="card-header">
-           ${intern.name} 
-        </div>
-        <div class="card-title">
-           ${intern.getRole()} 
-        </div>
-    </div>
-    <div class="card-body">
-        <ul class="list-group">
-           <li class="list-group-item">${intern.id}</l1>
-           <li class="list-group-item">${intern.email}</l1>
-           <li class="list-group-item">${intern.school}</l1>
-        </ul>
-        </div>
-</div>`
-};
+  return `<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Intern</h5>
+    <ul class="list-group">
+      <li class="list-group-item">Name: ${intern.name} </l1>
+      <li class="list-group-item">ID: ${intern.id}</l1>
+      <li class="list-group-item">E:<a href="mailto: ${intern.email}">${intern.email}</a></l1>
+      <li class="list-group-item">School:${intern.school}</l1>
+   </ul>
+  </div>
+</div>`;
+}
 
 //Render Engineer_________________________________________________
 function renderEngineer(engineer) {
-    return `<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <h1>
-                Engineer
-            </h1>
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="card-header">
-           ${engineer.name} 
-        </div>
-        <div class="card-title">
-           ${engineer.getRole()} 
-        </div>
-    </div>
-    <div class="card-body">
-        <ul class="list-group">
-           <li class="list-group-item">${engineer.id}</l1>
-           <li class="list-group-item">${engineer.email}</l1>
-           <li class="list-group-item">${engineer.github}</l1>
-        </ul>
-        </div>
-</div>`
-};
+  return `<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Engineer</h5>
+    <ul class="list-group">
+      <li class="list-group-item">Name: ${engineer.name} </l1>
+      <li class="list-group-item">ID: ${engineer.id}</l1>
+      <li class="list-group-item">E:<a href="mailto: ${engineer.email}">${engineer.email}</a></l1>
+      <li class="list-group-item">GitHub:<a href="https://www.github.com/${engineer.github}" target="_blank">${engineer.github}</l1></a>
+   </ul>
+  </div>
+</div>`;
+}
 
 module.exports = { renderManager, renderIntern, renderEngineer };
-
